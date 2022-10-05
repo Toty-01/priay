@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="./bootstrap/bootstrap.css.map">
+  <link rel="shortcut icon" href="./pic/logo-fcp.png">
+  <link rel="stylesheet" href="style.css">
+  <title>FCPriay</title>
+</head>
+<body>
+  <header>
+    <nav class='navbar'>
+        
+      <div class="navbar_logo">
+        <img class="logo" src="./pic/logo-fcp.png"/>
+        <span class='app-name'> FCPriay</span>
+      </div>
+
+      <ul class="navbar_links">
+
+        <li class="navbar_item slideInDown-2">
+          <a href="./index.html" class="navbar_link">
+            <i class="fa-solid fa-house"></i> Accueil
+          </a>
+        </li>
+
+        <li class="navbar_item slideInDown-1">
+          <a href="./galerie.html" class="navbar_link">
+            <i class="fa-solid fa-camera-retro"></i> Galerie
+          </a>
+        </li>
+
+        <li class="navbar_item slideInDown-2">
+          <a href="./evenements.html" class="navbar_link">
+            <i class="fa-solid fa-calendar-days"></i> Evenements
+          </a>
+        </li>
+
+        <li class="navbar_item slideInDown-1">
+          <a href="#" class="navbar_link active">
+            <i class="fa-solid fa-phone"></i> Contact
+          </a>
+        </li>
+
+      </ul>
+      <button class='navbar_burger'>
+        <span class="burger-bar"></span>
+      </button>
+    </nav>
+  </header>
+  <h1>Nous contacter</h1>
+
+  <h3 class="text-center m-5">Laissez nous vos coordonnées et nous vous recontacterons au plus vite</h3>
+
+<div class="container d-flex flex-collumn justify-content-center align-items-center mt-5">
+
+  <form class="row g-3 needs-validation" id="lessonForm" 
+  action="https://formspree.io/f/mgeqvopy" 
+  method="post"
+  novalidate>
+      <div class="col-md-6">
+          <label for="firstname" class="form-label">Nom :</label>
+          <input type="text" class="form-control" name="firstName" id="firstName">
+          <div class="invalid-feedback">
+              Veuillez saisir votre prénom.
+          </div>
+      </div>
+
+      <div class="col-md-6">
+          <label for="lastname" class="form-label">Prénom :</label>
+          <input type="text" class="form-control" name="lastName" id="lastName">
+          <div class="invalid-feedback">
+              Veuillez saisir votre nom.
+          </div>
+      </div>
+
+      <div class="col-md-6">
+          <label for="email" class="form-label">E-mail :</label>
+          <input type="email" class="form-control" name="email" id="email">
+          <div class="invalid-feedback">
+              Veuillez saisir votre e-mail.
+          </div>
+      </div>
+      
+      <div class="col-md-6">
+          <label for="phoneNumber" class="form-label">Téléphone :</label>
+          <input type="email" class="form-control" name="phoneNumber" id="phoneNumber">
+          <div class="invalid-feedback">
+              Veuillez saisir votre numéro de téléphone.
+          </div>
+      </div>
+
+      <div class="col-md-6">
+          <label for="prestation" class="form-label">Sujet de la demande :</label>
+          <select class="form-control" name="prestation" id="prestation">
+              <option selected disabled value="">Votre besoin concerne :</option>
+              <option>Une demande de license</option>
+              <option>Renseignement license</option>
+              <option>Match amical</option>
+              <option>Heure ou lieu de rencontre</option>
+          </select>
+          <div class="invalid-feedback">
+              Veuillez choisir un sujet.
+          </div>
+      </div>
+      <div class="col-md-6">
+        <label for="exampleFormControlTextarea1" class="form-label">Commentaire :</label>
+        <textarea class="form-control" name="Commentaire" id="Commentaire" rows="3"></textarea>
+        <div class="invalid-feedback">
+          Merci de mettre au moins 2 caractères
+      </div>
+      </div>
+      <div class="col-12">
+          <div class="m-5 form-check">
+              <input type="checkbox" class="form-check-input" id="conditions" name="conditions">
+              <label class="form-check-label" for="conditions">Je valide le formulaire</label>
+              <div class="invalid-feedback">
+                  Merci de cocher pour valider le formulaire.
+              </div>
+              <div class="valid-feedback">
+                Merci d'avoir coché le formulaire
+            </div>
+          </div>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary w-25 m-3 p-3">Valider</button>
+      </div>
+  </form>
+</div>
+
+  <script src="./bootstrap/bootstrap.js.map"></script>
+  <script src="./bootstrap/bootstrap.js"></script>
+  <script src="form.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
