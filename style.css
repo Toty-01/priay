@@ -25,8 +25,11 @@ h1 {
   position: fixed;
   width: 100%;
   min-height: 75px;
-  padding: 1rem;
-  background: #042E9F;
+  background: #1e5dfa;
+  background: linear-gradient(271deg,#1e5dfa 0%, #042e9f 80%);
+  background: -webkit-linear-gradient(271deg,#1e5dfa 0%, #042e9f 80%);
+  background: -moz-linear-gradient(271deg,#1e5dfa 0%, #042e9f 80%);
+  transition: top 0.5s;
 }
 .navbar_links {
   display: flex;
@@ -40,10 +43,10 @@ h1 {
   font-weight: 600;
 }
 .navbar_link.active {
-  color: #D31E03;
+  color: #B51903;
 }
 .navbar_link:hover {
-  color: #D31E03;
+  color: #B51903;
 }
 .navbar_item {
   list-style: none;
@@ -60,6 +63,7 @@ h1 {
   color: #D31E03;
   font-size: 1.4rem;
   font-weight: 700;
+  text-shadow: 1px 1px #FCC624;
 }
 .navbar_burger {
   width: 40px;
@@ -68,10 +72,56 @@ h1 {
   border: none;
   color: inherit;
 }
+.fa-solid {
+  font-size: 1.3rem;
+}
 .top-page {
   padding-top: 10rem;
   text-align: center;
   padding-bottom: 2rem;
+}
+.vid {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+video {
+  border-radius: 1rem;
+  z-index: -10;
+}
+
+/*----------------page evenements---------------------*/
+
+.event-btn {
+  display: flex;
+  justify-content: center;
+}
+.event-btn button {
+  background: #1e5dfa;
+  background: linear-gradient(271deg,#1e5dfa 0%, #042e9f 80%);
+  background: -webkit-linear-gradient(271deg,#1e5dfa 0%, #042e9f 80%);
+  background: -moz-linear-gradient(271deg,#1e5dfa 0%, #042e9f 80%);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: beige;
+  border: 2px solid #FCC624;
+}
+.event-btn button:hover {
+  background: #b51903;
+  background: linear-gradient(271deg,#b51903 0%, #d31e03 90%);
+  background: -webkit-linear-gradient(271deg,#b51903 0%, #d31e03 90%);
+  background: -moz-linear-gradient(271deg,#b51903 0%, #d31e03 90%);
+}
+.agenda {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
 }
 
 /*------------------SMALL DEVICE---------------------*/
@@ -83,9 +133,9 @@ h1 {
     position: fixed;
     right: -100vw;
     bottom: 0;
-    top: 0;
+    top: -1rem;
     width: 0;
-    height: 100vh;
+    height: 104vh;
     padding: 2rem;
     visibility: hidden;
     background-color: #042E9F;
@@ -95,6 +145,9 @@ h1 {
     width: 100vw;
     visibility: visible;
     right: 0;
+  }
+  video {
+    width: 100%;
   }
   .navbar_logo {
     width: 25%;
@@ -175,19 +228,19 @@ h1 {
   }
   @keyframes effect {
     0% {
-      transform: translateX(100vh);
+      transform: translateX(6rem);
     }
     25% {
-      transform: translateX(50vh);
+      transform: translateX(-4rem);
     }
     50% {
-      transform: translateX(-10vh);
+      transform: translateX(4rem);
     }
     75% {
-      transform: translateX(5vh);
+      transform: translateX(-2rem);
     }
     100% {
-      transform: translateX(0vh);
+      transform: translateX(0);
     }
   }
 }
