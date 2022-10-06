@@ -1,3 +1,4 @@
+/*
 const titreSpans = document.querySelectorAll('h1 span');
 const appName = document.querySelectorAll('.app-name');
 const logo = document.querySelectorAll('.logo');
@@ -14,6 +15,7 @@ window.addEventListener('load', () => {
   TL.play();
 
 })
+*/
 
 
 var prevScrollpos = window.pageYOffset;
