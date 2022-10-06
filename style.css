@@ -30,6 +30,7 @@ h1 {
   background: -webkit-linear-gradient(271deg,#1e5dfa 0%, #042e9f 80%);
   background: -moz-linear-gradient(271deg,#1e5dfa 0%, #042e9f 80%);
   transition: top 0.5s;
+  z-index: 4;
 }
 .navbar_links {
   display: flex;
@@ -94,7 +95,7 @@ video {
   justify-content: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
-
+  align-items: center;
 }
 .sponsor {
   width: 300px;
@@ -116,6 +117,17 @@ video {
 }
 .sponsor h3 {
   text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.map {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+
+}
+.map iframe {
+  max-width: 600;
 }
 
 /*---------------------gal-----------------------*/
@@ -124,11 +136,41 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
+.graf {
+  display: flex;
+  justify-content: center;
+}
+.graf > img{
+  width: 100%;
+  max-width: 1100px;
+  border-radius: 1.4rem;
+}
+.pic-solo {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #B51903;
+}
+.pic-solo > img {
+  width: 100%;
+  max-width: 1000px;
+}
+.pic-solo.u9{
+  max-height: 500px;
+  object-fit: cover;
+  max-width: 350px;
+  margin: 0 auto;
+}
+.carousel-indicators button {
+  height: 0.8rem !important;
+  border-radius: 1rem;
+}
 /*----------------page evenements---------------------*/
 .events {
   padding: 2rem;
   background-color: #d31e03;
   color: aliceblue;
+  margin: 10vw;
+  border-radius: 1rem;
 }
 .event {
   width: 100%;
@@ -137,7 +179,7 @@ video {
   margin-bottom: 4rem;
 }
 .event img {
-  width: 300px;
+  width: 350px;
   margin-top: 2rem;
   margin-bottom: 2rem;
   margin-left: auto;
@@ -145,7 +187,7 @@ video {
   border-radius: 0.5rem;
 }
 .portrait-pics {
-  height: 500px;
+  height: 450px;
   object-fit: cover;
 }
 .event-btn {
@@ -209,7 +251,7 @@ video {
     z-index: -2;
   }
   .navbar_logo {
-    width: 25%;
+    justify-content: center;
     z-index: 10;
   }
   .navbar_link {
@@ -260,6 +302,7 @@ video {
   }
   .burger-bar::before {
     transform: translateY(-12px);
+    height: 3px;
   }
   .burger-bar::after {
     transform: translateY(12px);
@@ -301,5 +344,16 @@ video {
     100% {
       transform: translateX(0);
     }
+  }
+  /*----------event------------*/
+  .events {
+    margin: 0;
+  }
+  .event img {
+    width: 250px;
+  }
+  .portrait-pics {
+    height: 320px;
+    object-fit: cover;
   }
 }
