@@ -53,24 +53,34 @@
     </nav>
   </header>
   
-  <h1>Nous contacter</h1>
+  <h1>Contact</h1>
 
-  <h2>Pour nous contacter vous avez plusieurs solutions :</h2>
-
-  <p>soit par mail :</p> 
-  <p>copier le mail</p>
-  <p>En remplissant le formulaire de contact en bas de page pour plus de précisions</p>
-
-  <p>soit par telephone en contactant Johnny Ryser , président du FCPriay:</p> 
-  <p>copier le numéro de telephone</p>
-  <p>Telephoner directement</p>
+  <h2 class="text-center mt-5 mb-5">Pour nous contacter vous avez plusieurs solutions :</h2>
   
-  <p>Soit par les réseaux sociaux sur facebook ou instagram :</p>
-  <div class="icon fcbk"></div>
-  <div class="icon insta"></div>
-  <a href="https://www.facebook.com/fpriay/photos" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-  <a href="https://www.instagram.com/fcpriay2022/?hl=fr" target="_blank"><i class="fa-brands fa-instagram"></i></i></a>
+  
+  <div class="mail text-center">
+    <h3>Soit par mail :</h3> 
+    <p>Copier mail <i class="fa-sharp fa-solid fa-copy"></i></p>
+    <p><a href="#lessonForm">En remplissant le formulaire de contact ci-dessous</a></p>
+  </div>
+  <div class="tel text-center mb-5 mt-5">
+    <h3>Soit par telephone :</h3> 
+    <p>Copier numéro <i class="fa-sharp fa-solid fa-copy"></i></p>
+    <p>Telephoner</p>
+  </div>
+  <h3 class="text-center">Soit par les réseaux sociaux sur facebook ou instagram :</h3>
+ 
+  <div class="icons mt-5">
 
+    <div class="icon insta">
+      <a href="https://www.instagram.com/fcpriay2022/?hl=fr" target="_blank"><img src="./pic/insta.svg"  class="insta-icon" alt="" srcset=""></a>
+    </div>
+    <div class="icon fcbk">
+      <a href="https://www.facebook.com/fpriay/photos" target="_blank"><img src="./pic/fb.svg" alt="" srcset=""></a>
+    </div>
+    
+  </div>
+  
   <h3 class="text-center m-5">Laissez nous vos coordonnées et nous vous recontacterons au plus vite</h3>
 
 <div class="container d-flex flex-collumn justify-content-center align-items-center mt-5">
@@ -81,7 +91,7 @@
   novalidate>
       <div class="col-md-6">
           <label for="firstname" class="form-label">Nom :</label>
-          <input type="text" class="form-control" name="firstName" id="firstName">
+          <input type="text" class="form-control" placeholder="Nom" name="firstName" id="firstName">
           <div class="invalid-feedback">
               Veuillez saisir votre prénom.
           </div>
@@ -89,7 +99,7 @@
 
       <div class="col-md-6">
           <label for="lastname" class="form-label">Prénom :</label>
-          <input type="text" class="form-control" name="lastName" id="lastName">
+          <input type="text" class="form-control" placeholder="Prénom" name="lastName" id="lastName">
           <div class="invalid-feedback">
               Veuillez saisir votre nom.
           </div>
@@ -97,7 +107,7 @@
 
       <div class="col-md-6">
           <label for="email" class="form-label">E-mail :</label>
-          <input type="email" class="form-control" name="email" id="email">
+          <input type="email" class="form-control" placeholder="exemple@yahoo.com" name="email" id="email">
           <div class="invalid-feedback">
               Veuillez saisir votre e-mail.
           </div>
@@ -105,7 +115,7 @@
       
       <div class="col-md-6">
           <label for="phoneNumber" class="form-label">Téléphone :</label>
-          <input type="email" class="form-control" name="phoneNumber" id="phoneNumber">
+          <input type="email" class="form-control" placeholder="0412345678" name="phoneNumber" id="phoneNumber">
           <div class="invalid-feedback">
               Veuillez saisir votre numéro de téléphone.
           </div>
@@ -127,7 +137,7 @@
       </div>
       <div class="col-md-6">
         <label for="exampleFormControlTextarea1" class="form-label">Commentaire :</label>
-        <textarea class="form-control" name="Commentaire" id="Commentaire" rows="3"></textarea>
+        <textarea class="form-control" placeholder="Laisser un message .." name="Commentaire" id="Commentaire" rows="3"></textarea>
         <div class="invalid-feedback">
           Merci de mettre au moins 2 caractères
       </div>
