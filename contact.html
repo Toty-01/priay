@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="./bootstrap/bootstrap.css.map">
   <link rel="shortcut icon" href="./pic/logo-fcp.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&family=Lobster&family=Pacifico&family=Peralta&family=Righteous&display=swap" rel="stylesheet">
   <title>FCPriay</title>
 </head>
 <body>
@@ -40,6 +43,12 @@
           </a>
         </li>
 
+        <li class="navbar_item slideInDown-2">
+          <a href="./sponsors.html" class="navbar_link">
+            <i class="fa-sharp fa-solid fa-handshake"></i> Sponsors
+          </a>
+        </li>
+
         <li class="navbar_item slideInDown-1">
           <a href="#" class="navbar_link active">
             <i class="fa-solid fa-phone"></i> Contact
@@ -59,16 +68,26 @@
   
   
   <div class="mail text-center">
-    <h3>Soit par mail :</h3> 
-    <p>Copier mail <i class="fa-sharp fa-solid fa-copy"></i></p>
+    <h3><i class="fa-solid fa-envelope"></i> Soit par mail :</h3> 
+    <p id="text1">xavier.cuvelier@hotmail.fr</p>
+    <p>Copier mail <i class="fa-sharp fa-solid fa-copy" onclick="copy('text1')"></i></p>
+    <a href="mailto:xavier.cuvelier@hotmail.fr">
+      <button type="submit">Envoyer un mail</button>
+    </a>
     <p><a href="#lessonForm">En remplissant le formulaire de contact ci-dessous</a></p>
   </div>
+
+  <p id="alert">Texte copié</p>
+
   <div class="tel text-center mb-5 mt-5">
-    <h3>Soit par telephone :</h3> 
-    <p>Copier numéro <i class="fa-sharp fa-solid fa-copy"></i></p>
-    <p>Telephoner</p>
+    <h3><i class="fa fa-mobile" aria-hidden="true"></i> Soit par telephone :</h3> 
+    <p class="mt-3" id="text2">06 17 75 61 43</p>
+    <p>Copier numéro <i class="fa-sharp fa-solid fa-copy" onclick="copy('text2')"></i></p>
+    <a href="tel:+33617756143">
+      <button type="phone">Appeler</button>
+    </a>
   </div>
-  <h3 class="text-center">Soit par les réseaux sociaux sur facebook ou instagram :</h3>
+  <h3 class="text-center">Soit sur les réseaux sociaux facebook / instagram :</h3>
  
   <div class="icons mt-5">
 
@@ -155,7 +174,7 @@
           </div>
       </div>
       <div class="text-center">
-        <button type="submit" class="btn btn-primary w-25 m-3 p-3">Valider</button>
+        <button type="submit" class="btn btn-primary w-25 m-3 p-3">Envoyer</button>
       </div>
   </form>
 </div>
