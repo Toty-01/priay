@@ -56,16 +56,13 @@ li {
 }
 .navbar_link {
   text-decoration: none;
-  color: rgb(207, 207, 207);
+  color: aliceblue;
   padding: 0 0.6rem;
   font-size: 1.4rem;
   font-weight: 600;
 }
-.navbar_link.active {
-  color: #B51903;
-}
-.navbar_link:hover {
-  color: #B51903;
+.navbar_link.active, .navbar_link:hover {
+  color: #D31E03;
 }
 .navbar_item {
   list-style: none;
@@ -117,7 +114,123 @@ video {
 .map iframe {
   max-width: 600;
 }
-
+/*------------------------------footer-------------------------------------*/
+hr.footer-sep {
+  width: 100%;
+  height: 2px;
+  margin-bottom: 0;
+}
+footer {
+  padding-bottom: 2rem;
+  background: #1e5dfa;
+  background: linear-gradient(271deg,#1e5dfa 0%, #042e9f 80%);
+  background: -webkit-linear-gradient(271deg,#1e5dfa 0%, #042e9f 80%);
+  background: -moz-linear-gradient(271deg,#1e5dfa 0%, #042e9f 80%);
+  color: aliceblue;
+  padding-top: 4rem;
+}
+.foot-container {
+   display: flex;
+   justify-content: space-evenly;
+   width: 100%;
+   margin-bottom: 2rem;
+}
+.Services-foot, .Contact-foot, .Horaires-foot {
+  width: 33%;
+}
+.Services-foot h3, .Contact-foot h3,.Horaires-foot h3 {
+  text-align: center;
+  margin: 1rem;
+  font-size: 1.7rem;
+}
+.Services-foot ul, .Contact-foot ul,.Horaires-foot ul { 
+  padding-left: 0;
+}
+.Services-foot li, .Contact-foot li,.Horaires-foot li {
+ list-style-type: none;
+ padding: 0.2rem;
+ text-align: center;
+}
+.fa-brands {
+  font-size: 2.5rem;
+}
+.top-arrow {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  animation: arrow-mvmnt 3s ease-in-out infinite;
+}
+@keyframes arrow-mvmnt {
+  0% {
+    transform: translateY(5px);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+.top-arrow a {
+  color: #D31E03;
+}
+.pag {
+  display: flex;
+  justify-content: center;
+}
+.pag a {
+  text-decoration: none;
+  color: #202020;
+  cursor: pointer;
+}
+.pag a:hover {
+  color: whitesmoke;
+}
+.pag ul {
+  list-style-type: none;
+  display: flex;
+  padding: 8px;
+  border-radius: 4rem;
+  background:#b51903;
+  background: linear-gradient(271deg,#b51903 0%, #d31e03 90%);
+  background: -webkit-linear-gradient(271deg,#b51903 0%, #d31e03 90%);
+  background: -moz-linear-gradient(271deg,#b51903 0%, #d31e03 90%);
+  cursor: default;
+}
+.pag ul li {
+  list-style-type: none;
+  line-height: 45px;
+  text-align: center;
+}
+.pag ul li.numb {
+  height: 45px;
+  width: 30px;
+}
+.fa-solid.fa-check {
+  color: green;
+}
+.fa-solid.fa-xmark {
+  color: red;
+}
+.side-pag-left {
+  padding-left: 1rem;
+}
+.side-pag-right {
+  padding-right: 1rem;
+}
+.foot-container h3 {
+  font-family: 'Lobster', cursive;
+  color: #fac31d;
+}
+.foot-container img {
+  width: 3rem;
+}
 /*---------------------gal-----------------------*/
 .marquee-container {
   display: flex;
@@ -148,7 +261,7 @@ video {
   }
 }
 .carousel.slide {
-  max-width: 950px;
+  max-width: 750px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -158,26 +271,27 @@ video {
 }
 .graf > img{
   width: 100%;
-  max-width: 1200px;
+  max-width: 900px;
   border-radius: 1.4rem;
 }
 .carousel-indicators button {
   height: 0.8rem !important;
   border-radius: 1rem;
 }
-.pic-solo > img {
-  width: 100%;
-  max-width: 1000px;
-}
 .pics-solo {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   justify-content: space-around;
+  align-items: center;
   background:#b51903;
   background: linear-gradient(271deg,#b51903 0%, #d31e03 90%);
   background: -webkit-linear-gradient(271deg,#b51903 0%, #d31e03 90%);
   background: -moz-linear-gradient(271deg,#b51903 0%, #d31e03 90%);
+}
+.pic-solo > img {
+  width: 100%;
+  max-width: 800px;
 }
 .pic-solo.enfants, .pic-solo.u9{
   padding-top: 4rem;
@@ -187,7 +301,7 @@ video {
   width: 100%;
 }
 .pic-solo.u9 > img {
-  width: 426.4px;
+  width: 350px;
   height: auto;
 }
 .balls {
@@ -237,7 +351,7 @@ video {
 /*----------------page evenements---------------------*/
 .event-title {
   height: 100vh;
-  padding-top: 6rem;
+  padding-top: 8rem;
   margin-left: 2rem;
   margin-right: 2rem;
 }
@@ -264,36 +378,11 @@ video {
   border-radius: 0.5rem;
 }
 .portrait-pics {
-  height: 450px;
+  height: 420px;
   object-fit: cover;
 }
 .event p {
   font-size: 1.3rem;
-}
-.event-btn {
-  display: flex;
-  justify-content: center;
-}
-.event-btn button {
-  background: #1e5dfa;
-  background: linear-gradient(271deg,#1e5dfa 0%, #042e9f 80%);
-  background: -webkit-linear-gradient(271deg,#1e5dfa 0%, #042e9f 80%);
-  background: -moz-linear-gradient(271deg,#1e5dfa 0%, #042e9f 80%);
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border-radius: 1rem;
-  font-size: 1.3rem;
-  font-weight: 500;
-  color: beige;
-  border: 2px solid #FCC624;
-}
-.event-btn button:hover {
-  background: #b51903;
-  background: linear-gradient(271deg,#b51903 0%, #d31e03 90%);
-  background: -webkit-linear-gradient(271deg,#b51903 0%, #d31e03 90%);
-  background: -moz-linear-gradient(271deg,#b51903 0%, #d31e03 90%);
 }
 .agenda {
   display: flex;
@@ -372,23 +461,22 @@ video {
   display: flex;
   align-items: center;
   justify-content: center;
-  justify-content: space-evenly;
   margin-bottom: 5rem;
 }
-.insta-icon {
-  margin-top: -0.1rem;
+.icon.insta {
+  margin-right: 2rem;
 }
 .icon {
   width: 50px;
   height: 50px;
 }
+.insta-icon {
+  margin-top: -0.1rem;
+}
 .icon:hover {
   transition: all 0.5s ease-in-out;
   transform: scale(1.1);
 }
-.icon > a > img {
-  fill: aliceblue;
-} 
 .mail > p , .tel > p {
   font-size: 1.4rem;
 }
@@ -399,32 +487,58 @@ video {
 .mail button {
   margin-bottom: 1rem;
 }
-.mail > a > button, .tel > a > button {
+
+.mail > a, .tel > a, .event-btn a {
+  width: 200px;
+  height: 60px;
+  font-size: 1.3rem;
+  font-family: arial, sans-serif;
+  font-weight: 700;
+  position: relative;
+  color: white;
+  z-index: 0;
+  border: 2px solid #FCC624;
   background: #1e5dfa;
   background: linear-gradient(271deg,#1e5dfa 0%, #042e9f 80%);
   background: -webkit-linear-gradient(271deg,#1e5dfa 0%, #042e9f 80%);
   background: -moz-linear-gradient(271deg,#1e5dfa 0%, #042e9f 80%);
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  overflow: hidden;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 1rem;
-  font-size: 1.3rem;
-  font-weight: 500;
-  color: beige;
-  border: 2px solid #FCC624;
+  margin-left: auto;
+  margin-right: auto;
 }
-.mail > a > button:hover, .tel > a > button:hover {
+.mail > a::before,.tel > a::before, .event-btn a::before {
+  content: '';
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: #b51903;
   background: linear-gradient(271deg,#b51903 0%, #d31e03 90%);
   background: -webkit-linear-gradient(271deg,#b51903 0%, #d31e03 90%);
   background: -moz-linear-gradient(271deg,#b51903 0%, #d31e03 90%);
-  transition: all 0.4s ease-in-out;
-  transform: scale(1.04);
+  border-radius: 50% 50% 0% 0%;
+  z-index: -1;
+  transition: all .5s;
+}
+.mail > a:hover::before, .tel > a:hover::before, .event-btn a:hover::before {
+  top: 0px;
+  border-radius: 0;
+}
+.form-a {
+  text-decoration: none;
+}
+.form-a:hover {
+  color: #d31e03;
 }
 
 /*------------------SMALL DEVICE---------------------*/
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 750px) {
   .navbar_links {
     flex-direction: column;
     justify-content: center;
@@ -437,7 +551,10 @@ video {
     height: 104vh;
     padding: 2rem;
     visibility: hidden;
-    background-color: #042E9F;
+    background: #1e5dfa;
+    background: linear-gradient(91deg,#1e5dfa 0%, #042e9f 80%);
+    background: -webkit-linear-gradient(91deg,#1e5dfa 0%, #042e9f 80%);
+    background: -moz-linear-gradient(91deg,#1e5dfa 0%, #042e9f 80%);
     transition: all .5s ease-in-out;
   }
   .show-nav {
@@ -550,6 +667,21 @@ video {
     100% {
       transform: translateX(0);
     }
+  }
+  .foot-container {
+    display: block;
+    width: 100%;
+  }
+  .Services-foot h3, .Contact-foot h3,.Horaires-foot h3 {
+    text-align: center;
+    margin: 1rem;
+    font-size: 2rem;
+  }
+  .Services-foot, .Contact-foot,.Horaires-foot {
+    margin-bottom: 2rem;
+  }
+  .Services-foot, .Contact-foot, .Horaires-foot {
+    width: 100%;
   }
   /*-----------gal---------------*/
   .marquee {
