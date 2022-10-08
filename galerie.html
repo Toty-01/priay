@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./bootstrap/bootstrap.css">
   <link rel="stylesheet" href="./bootstrap/bootstrap.css.map">
   <link rel="shortcut icon" href="./pic/logo-fcp.png">
+  <link rel="stylesheet" href="./aos/aos.css">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -61,8 +62,11 @@
       </button>
     </nav>
   </header>
-  <h1 class="mb-5">Galerie</h1>
 
+  <div class="gal-title">
+    <h1>Galerie</h1>
+  </div>
+<div class="gal-body">
   <div class="pics-solo">
     <div class="pic-solo enfants">
       <img src="./pic/gal/enfants.jpg" alt="" srcset="">
@@ -72,11 +76,6 @@
     </div>
   </div>
 
-  <div class="marquee-container">
-    <div class="marquee">
-      PASSION - FOOTBALL - RESPECT - TRAVAIL - RIGUEUR - PARTAGE -
-    </div>
-  </div>
 
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
     <div class="carousel-indicators">
@@ -109,12 +108,9 @@
     </button>
   </div>
 
-  <div class="balls">
-    <div class="pic-solo ball-left">
-      <img src="./pic/football-157930_1280.png" alt="" srcset="">
-    </div>
-    <div class="pic-solo ball-right">
-      <img src="./pic/football-157930_1280.png" alt="" srcset="">
+  <div class="marquee-container">
+    <div class="marquee">
+      PASSION - FOOTBALL - RESPECT - TRAVAIL - RIGUEUR - PARTAGE -
     </div>
   </div>
 
@@ -145,8 +141,22 @@
     </button>
   </div>
 
-  <div class="graf">
-    <img src="./pic/graf.jpg" alt="">
+  <div class="pics-solo">
+    <div class="pic-solo stade">
+      <img src="./pic/gal/stade.jpg">
+    </div>
+    <div class="pic-solo fcbp">
+      <img src="./pic/gal/fcbp.jpg">
+    </div>
+  </div>
+
+  <div class="balls">
+    <div class="pic-solo ball-left">
+      <img src="./pic/football-157930_1280.png" alt="" srcset="">
+    </div>
+    <div class="pic-solo ball-right">
+      <img src="./pic/football-157930_1280.png" alt="" srcset="">
+    </div>
   </div>
 
   <div id="carouselExampleIndicato" class="carousel slide" data-bs-ride="true">
@@ -176,37 +186,44 @@
     </button>
   </div>
 
+  <div class="graf">
+    <img src="./pic/graf.jpg" alt="">
+  </div>
+
+  </div>
   <footer> 
 
     <div class="foot-container">
  
-     <div class="Services-foot">
-       <h3>Orga</h3>
-       <ul>
-         <li>Président :</li>
-         <li><b>Johnny Ryser</b></li>
-         <li>Vice président</li>
-         <li><b>Simon Bonarchot</b></li>
-         <li>Secrétaire</li>
-         <li><b>Dufour Edwige</b></li>
-         <li>Directeur Sportif</li>
-         <li><b>Yoann Fontanel</b></li>
-       </ul>
-     </div>
- 
-     <div class="Contact-foot">
-       <h3>Contact</h3>
-       <ul>
-         <li><b>Telephone</b></li>
-         <li>0606557146</li>
-         <li><b>E-mail</b></li>
-         <li>xavier.cuvelier@hotmail.fr</li>
-         <li><b>Adresse</b></li>
-         <li>D5, 01160 Priay</li>
-         <br>
-         <li><a href="https://www.facebook.com/fpriay" target="_blank"><img src="./pic/fb.svg" alt="" srcset=""></a></li>
-       </ul>
-     </div>
+      <div class="Services-foot">
+        <h3>Orga</h3>
+        <ul>
+          <li>Président :</li>
+          <li><b>Johnny Ryser</b></li>
+          <li>Vice président</li>
+          <li><b>Simon Bonarchot</b></li>
+          <li>Secrétaire</li>
+          <li><b>Dufour Edwige</b></li>
+          <li>Directeur Sportif</li>
+          <li><b>Yoann Fontanel</b></li>
+          <br>
+          <li><a href="https://www.facebook.com/fpriay" target="_blank"><img src="./pic/fb.svg"></a></li>
+        </ul>
+      </div>
+  
+      <div class="Contact-foot">
+        <h3>Contact</h3>
+        <ul>
+          <li><b>Telephone</b></li>
+          <li>0606557146</li>
+          <li><b>E-mail</b></li>
+          <li>xavier.cuvelier@hotmail.fr</li>
+          <li><b>Adresse</b></li>
+          <li>D5, 01160 Priay</li>
+          <br>
+          <li><img class="logo" src="./pic/logo-fcp.png"/></li>
+        </ul>
+      </div>
  
      <div class="Horaires-foot">
        <h3>Entrainements</h3>
@@ -234,7 +251,7 @@
     <a href="index.html"><li class="numb"><span>1</span></li></a>
     <li class="numb"><span>2</span></li>
     <a href="evenements.html"><li class="numb"><span>3</span></li></a>
-    <a href="galerie.html"><li class="numb"><span>4</span></li></a>
+    <a href="sponsors.html"><li class="numb"><span>4</span></li></a>
     <a href="contact.html"><li class="numb"><span>5</span></li></a>
     <a href="evenements.html"><li><span class="side-pag-right">Next <i class="fas fa-angle-right"></i></span></li></a>
   </ul>
@@ -242,6 +259,7 @@
 
   </footer>
 
+  <script src="./aos/aos.js"></script>
   <script src="./bootstrap/bootstrap.js"></script>
   <script src="./bootstrap/bootstrap.js.map"></script>
   <script src="script.js"></script>

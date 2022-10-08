@@ -91,10 +91,14 @@ li {
 .fa-solid {
   font-size: 1.3rem;
 }
-.top-page {
-  padding-top: 10rem;
-  text-align: center;
-  padding-bottom: 2rem;
+.titre {
+  height: 70vh;
+}
+.titre h1 {
+  margin-top: 20rem;
+}
+.titre h2 {
+  margin-top: 10rem;
 }
 .vid {
   display: flex;
@@ -196,12 +200,15 @@ footer {
   list-style-type: none;
   display: flex;
   padding: 8px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   border-radius: 4rem;
   background:#b51903;
   background: linear-gradient(271deg,#b51903 0%, #d31e03 90%);
   background: -webkit-linear-gradient(271deg,#b51903 0%, #d31e03 90%);
   background: -moz-linear-gradient(271deg,#b51903 0%, #d31e03 90%);
   cursor: default;
+  font-size: 1.1rem;
 }
 .pag ul li {
   list-style-type: none;
@@ -232,6 +239,20 @@ footer {
   width: 3rem;
 }
 /*---------------------gal-----------------------*/
+.gal-title {
+  height: 85vh;
+}
+.gal-title h1 {
+  padding-top: 14rem;
+  font-size: 5rem;
+  font-weight: lighter;
+}
+.gal-body {
+  background:#b51903;
+  background: linear-gradient(271deg,#b51903 0%, #d31e03 90%);
+  background: -webkit-linear-gradient(271deg,#b51903 0%, #d31e03 90%);
+  background: -moz-linear-gradient(271deg,#b51903 0%, #d31e03 90%);
+}
 .marquee-container {
   display: flex;
   align-items: center;
@@ -264,6 +285,8 @@ footer {
   max-width: 750px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
 }
 .graf {
   display: flex;
@@ -272,7 +295,6 @@ footer {
 .graf > img{
   width: 100%;
   max-width: 900px;
-  border-radius: 1.4rem;
 }
 .carousel-indicators button {
   height: 0.8rem !important;
@@ -284,18 +306,17 @@ footer {
   justify-content: center;
   justify-content: space-around;
   align-items: center;
-  background:#b51903;
-  background: linear-gradient(271deg,#b51903 0%, #d31e03 90%);
-  background: -webkit-linear-gradient(271deg,#b51903 0%, #d31e03 90%);
-  background: -moz-linear-gradient(271deg,#b51903 0%, #d31e03 90%);
 }
 .pic-solo > img {
   width: 100%;
   max-width: 800px;
 }
-.pic-solo.enfants, .pic-solo.u9{
+.pic-solo.enfants, .pic-solo.u9, .pic-solo.fcbp, .pic-solo.stade {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+.pic-solo.fcbp img, .pic-solo.stade img {
+  max-width: 600px;
 }
 .pic-solo.enfants > img {
   width: 100%;
@@ -307,10 +328,7 @@ footer {
 .balls {
   display: flex;
   width: 100%;
-  background: #b51903;
-  background: linear-gradient(271deg,#b51903 0%, #d31e03 90%);
-  background: -webkit-linear-gradient(271deg,#b51903 0%, #d31e03 90%);
-  background: -moz-linear-gradient(271deg,#b51903 0%, #d31e03 90%);
+  background: #1e5dfa;
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-top: 2px solid #FCC624;
@@ -351,17 +369,30 @@ footer {
 /*----------------page evenements---------------------*/
 .event-title {
   height: 100vh;
-  padding-top: 8rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  background-image: url(./pic/event.jpg);
+  background-size: cover;
+  color: aliceblue;
+  padding: 4rem;
+}
+.event-title h1 {
+   padding-top: 8rem;
+   text-shadow: 3px 3px black;
+   font-size: 5rem;
+}
+.event-title h2 {
+  margin-top: 6rem;
+  font-size: 3rem;
+  text-shadow: 3px 3px black;
 }
 .events {
   padding: 2rem;
+  padding-top: 4rem;
   background-color: #d31e03;
   color: aliceblue;
   margin-left: 20vw;
   margin-right: 20vw;
-  border-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
 }
 .event {
   width: 100%;
@@ -441,6 +472,17 @@ footer {
 }
 
 /*-----------------page contact------------------------*/
+.contact-title {
+  height: 85vh;
+  background-image: url(./pic/call.jpg);
+  background-size: cover;
+  background-position: 20% 10%;
+}
+.contact-title h1 {
+  padding-top: 15rem;
+  font-size: 5rem;
+  font-weight: lighter;
+}
 .fa-sharp.fa-solid.fa-copy:hover {
   cursor: pointer;
   transition: all 0.5s ease-in-out;
@@ -476,6 +518,22 @@ footer {
 .icon:hover {
   transition: all 0.5s ease-in-out;
   transform: scale(1.1);
+}
+.mail {
+  border: 2px solid #202020;
+  border-radius: .6rem;
+  box-shadow: 10px 10px 5px #202020;
+  margin: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.tel {
+  border: 2px solid #202020;
+  border-radius: .6rem;
+  box-shadow: 10px 10px 5px #202020;
+  margin: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .mail > p , .tel > p {
   font-size: 1.4rem;
@@ -564,6 +622,17 @@ footer {
     width: 100vw;
     visibility: visible;
     right: 0;
+  }
+  .titre h1 {
+    margin-top: 15rem;
+    font-size: 4rem;
+  }
+  .titre h2 {
+    margin-top: 5rem;
+    font-size: 2.2rem;
+  }
+  .titre .graf {
+    margin-top: 4rem;
   }
   .vid {
     margin-top: 0;
@@ -716,10 +785,23 @@ footer {
     padding-top: 0;
   }
   .pic-solo.u9 > img {
-    width: 320px;
+    width: 220px;
     height: auto;
+    border-radius: 1rem;
   }
   /*----------event------------*/
+  .event-title {
+    height: 105vh;
+  }
+  .event-title h1 {
+    padding-top: 6rem;
+    margin-left: -0.5rem;
+    font-size: 3rem;
+  }
+  .event-title h2 {
+    margin-top: 8rem;
+    font-size: 1.4rem;
+  }
   .events {
     margin: 0;
   }
