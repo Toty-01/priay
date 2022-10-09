@@ -17,11 +17,11 @@ h2 {
   font-size: 2rem;
   font-family: 'Audiowide', cursive;
 }
-h3 {
-  font-family: 'Alkalami', serif;
-}
-p, ul {
+p, ul  {
   font-family: 'Josefin Sans', sans-serif;
+}
+h3 {
+  font-family: 'Lobster', cursive;
 }
 li {
   list-style-type: none;
@@ -92,13 +92,41 @@ li {
   font-size: 1.3rem;
 }
 .titre {
-  height: 70vh;
+  height: 80vh;
 }
 .titre h1 {
-  margin-top: 20rem;
+  margin-top: 10rem;
+  font-size: 5.5rem;
+}
+.title-logo img {
+  width: 250px;
+  margin-top: 2rem;
 }
 .titre h2 {
-  margin-top: 10rem;
+  margin-top: 4rem;
+}
+.main-content {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #1e5dfa;
+  border-radius: 1rem;
+  padding: 2rem;
+  padding-bottom: 1rem;
+  box-shadow: 2px 2px 2px #fac31d;
+}
+.main-content h3 {
+  color: #d31e03;
+  margin-bottom: 1.5rem;
+}
+.main-content img {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+}
+.main-content p,.main-content ul {
+  font-size: 1.4rem;
 }
 .vid {
   display: flex;
@@ -113,7 +141,6 @@ video {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
-
 }
 .map iframe {
   max-width: 600;
@@ -236,7 +263,8 @@ footer {
   color: #fac31d;
 }
 .foot-container img {
-  width: 3rem;
+  width: 2.8rem;
+  height: 3.4rem;
 }
 /*---------------------gal-----------------------*/
 .gal-title {
@@ -470,6 +498,9 @@ footer {
   font-weight: 700;
   margin-bottom: 2rem;
 }
+.tp p {
+  font-size: 1.2rem;
+}
 
 /*-----------------page contact------------------------*/
 .contact-title {
@@ -519,21 +550,16 @@ footer {
   transition: all 0.5s ease-in-out;
   transform: scale(1.1);
 }
-.mail {
+.mail, .tel {
   border: 2px solid #202020;
   border-radius: .6rem;
   box-shadow: 10px 10px 5px #202020;
   margin: 1rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-.tel {
-  border: 2px solid #202020;
-  border-radius: .6rem;
-  box-shadow: 10px 10px 5px #202020;
-  margin: 1rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .mail > p , .tel > p {
   font-size: 1.4rem;
@@ -545,8 +571,7 @@ footer {
 .mail button {
   margin-bottom: 1rem;
 }
-
-.mail > a, .tel > a, .event-btn a {
+.mail > a, .tel > a, .event-btn a,.main-content a {
   width: 200px;
   height: 60px;
   font-size: 1.3rem;
@@ -569,7 +594,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
 }
-.mail > a::before,.tel > a::before, .event-btn a::before {
+.mail > a::before,.tel > a::before, .event-btn a::before, .main-content a::before {
   content: '';
   position: absolute;
   top: 60px;
@@ -584,7 +609,7 @@ footer {
   z-index: -1;
   transition: all .5s;
 }
-.mail > a:hover::before, .tel > a:hover::before, .event-btn a:hover::before {
+.mail > a:hover::before, .tel > a:hover::before, .event-btn a:hover::before, .main-content a:hover::before {
   top: 0px;
   border-radius: 0;
 }
@@ -623,12 +648,19 @@ footer {
     visibility: visible;
     right: 0;
   }
+  .titre {
+    height: 90vh;
+  }
   .titre h1 {
-    margin-top: 15rem;
+    margin-top: 9rem;
     font-size: 4rem;
   }
+  .title-logo img {
+    width: 250px;
+    margin-top: 2rem;
+  }
   .titre h2 {
-    margin-top: 5rem;
+    margin-top: 2rem;
     font-size: 2.2rem;
   }
   .titre .graf {
@@ -737,6 +769,17 @@ footer {
       transform: translateX(0);
     }
   }
+  
+  .main-content {
+    width: 80%;
+  }
+  .vid {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .map {
+    margin-top: 0;
+  }
   .foot-container {
     display: block;
     width: 100%;
@@ -821,5 +864,11 @@ footer {
   .sponsor-titre h1 {
     margin-bottom: 4rem;
     font-size: 4rem;
+  }
+  /*-------------contact-----------------*/
+  .mail, .tel {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
