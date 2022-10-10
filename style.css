@@ -106,27 +106,41 @@ li {
   margin-top: 4rem;
 }
 .main-content {
-  width: 50%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
-  border: 2px solid #1e5dfa;
-  border-radius: 1rem;
-  padding: 2rem;
-  padding-bottom: 1rem;
-  box-shadow: 2px 2px 2px #fac31d;
+  display: flex;
+  overflow: hidden;
+  background-color: #444444;
+  flex-direction: column;
+  color: aliceblue;
+  box-shadow: 1px 4px #fac31d;
+  border-radius: 2rem;
+}
+.main-content.stade,.main-content.end {
+  padding-bottom: 4rem;
 }
 .main-content h3 {
+  margin-top: 4rem;
   color: #d31e03;
-  margin-bottom: 1.5rem;
+  font-size: 4rem;
+  margin-bottom: 4rem;
 }
 .main-content img {
   width: 100%;
   max-width: 600px;
+  height: 300px;
   margin-bottom: 1rem;
   border-radius: 1rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
 }
 .main-content p,.main-content ul {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
+  padding: 2rem;
+}
+.main-content ul {
+  margin-left: 0.5rem;
 }
 .vid {
   display: flex;
@@ -138,7 +152,6 @@ video {
   border-radius: 1rem;
 }
 .map {
-  margin-top: 2rem;
   display: flex;
   justify-content: center;
 }
@@ -190,6 +203,9 @@ footer {
   margin-bottom: 2rem;
   font-size: 1.6rem;
   animation: arrow-mvmnt 3s ease-in-out infinite;
+}
+.Horaires-foot > ul > li > a > img {
+  width: 3rem;
 }
 @keyframes arrow-mvmnt {
   0% {
@@ -397,13 +413,15 @@ footer {
 /*----------------page evenements---------------------*/
 .event-title {
   height: 100vh;
-  background-image: url(./pic/event.jpg);
-  background-size: cover;
+  background: #1e5dfa;
+  background: linear-gradient(271deg,#1e5dfa 0%, #042e9f 80%);
+  background: -webkit-linear-gradient(271deg,#1e5dfa 0%, #042e9f 80%);
+  background: -moz-linear-gradient(271deg,#1e5dfa 0%, #042e9f 80%);
   color: aliceblue;
   padding: 4rem;
 }
 .event-title h1 {
-   padding-top: 8rem;
+   padding-top: 6rem;
    text-shadow: 3px 3px black;
    font-size: 5rem;
 }
@@ -419,14 +437,16 @@ footer {
   color: aliceblue;
   margin-left: 20vw;
   margin-right: 20vw;
-  border-bottom-right-radius: 1rem;
-  border-bottom-left-radius: 1rem;
+  border-radius: 1.5rem;
 }
 .event {
   width: 100%;
   display: flex;
   flex-direction: column;
   margin-bottom: 4rem;
+}
+.event-btn > a {
+  margin-bottom: 1rem;
 }
 .event img {
   width: 320px;
@@ -442,6 +462,16 @@ footer {
 }
 .event p {
   font-size: 1.3rem;
+}
+.agenda-title {
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+  font-size: 3.5rem;
+}
+.events-logo img {
+  margin-top: 1rem;
+  width: 250px;
+  margin-bottom: 4rem;
 }
 .agenda {
   display: flex;
@@ -505,9 +535,8 @@ footer {
 /*-----------------page contact------------------------*/
 .contact-title {
   height: 85vh;
-  background-image: url(./pic/call.jpg);
+  background-image: url(./pic/calls.jpg);
   background-size: cover;
-  background-position: 20% 10%;
 }
 .contact-title h1 {
   padding-top: 15rem;
@@ -539,7 +568,7 @@ footer {
 .icon.insta {
   margin-right: 2rem;
 }
-.icon {
+.icon > img {
   width: 50px;
   height: 50px;
 }
@@ -621,7 +650,7 @@ footer {
 }
 
 /*------------------SMALL DEVICE---------------------*/
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 890px) {
   .navbar_links {
     flex-direction: column;
     justify-content: center;
@@ -754,24 +783,51 @@ footer {
   }
   @keyframes effect {
     0% {
-      transform: translateX(6rem);
-    }
-    25% {
-      transform: translateX(-4rem);
-    }
-    50% {
       transform: translateX(4rem);
     }
-    75% {
-      transform: translateX(-2rem);
+    25% {
+      transform: translateX(-3rem);
+    }
+    50% {
+      transform: translateX(2rem);
     }
     100% {
       transform: translateX(0);
     }
   }
-  
   .main-content {
-    width: 80%;
+    width: 100%;
+    border-radius: 0;
+  }
+  .title-logo > img {
+    width: 12rem;
+  }
+  .main-content h3{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  .main-content > ul > li {
+     margin-top: 1rem;
+  }
+  .main-content p,.main-content ul {
+    font-size: 1.4rem;
+    padding: 2rem;
+  }
+  .main-content img {
+    width: 260px;
+    height: auto;
+  }
+  .main-content::before {
+    top: 2rem;
+    left: -5rem;
+    width: 20rem;
+    height: 5%;
+  }
+  .main-content::after {
+    width: 30rem;
+    height: 4rem;
+    top: 10rem;
+    left: -10rem;
   }
   .vid {
     margin-top: 0;
@@ -837,16 +893,20 @@ footer {
     height: 105vh;
   }
   .event-title h1 {
-    padding-top: 6rem;
+    margin-top: 4rem;
     margin-left: -0.5rem;
     font-size: 3rem;
   }
   .event-title h2 {
-    margin-top: 8rem;
+    margin-top: 4rem;
     font-size: 1.4rem;
+  }
+  .agenda-title {
+    font-size: 2.5rem;
   }
   .events {
     margin: 0;
+    border-radius: 0;
   }
   .event img {
     width: 250px;
@@ -870,5 +930,11 @@ footer {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+  }
+  .icon.fcbk img, .icon.insta img {
+    width: 5rem;
+  }
+  .form-label {
+    text-align: center;
   }
 }
