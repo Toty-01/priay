@@ -64,12 +64,34 @@
   </header>
 
   <div class="contact-title">
-    <h1>Contact</h1>
+
+    <h1 class="title-logo text-center aos-item"
+    data-aos="fade-down" 
+    data-aos-offset="0"
+    data-aos-delay="50"
+    data-aos-duration="3000"
+    data-aos-easing="ease-in-out">Contact</h1>
+
+    <div class="title-logo text-center aos-item"
+    data-aos="fade-up" 
+    data-aos-offset="0"
+    data-aos-delay="50"
+    data-aos-duration="3000"
+    data-aos-easing="ease-in-out">
+      <img src="./pic/logo-fcp.png" alt="">
+    </div>
+    
   </div>
 
   <h2 class="text-center m-4 mt-5">Pour nous contacter plusieurs solutions :</h2>
   
-  <div class="mail text-center mt-5">
+  <div class="mail text-center mt-5 
+    aos-item"
+    data-aos="zoom-in" 
+    data-aos-offset="0"
+    data-aos-delay="50"
+    data-aos-duration="2000"
+    data-aos-easing="ease-in-out">
     <h3 class="mb-5"><i class="fa-solid fa-envelope"></i> Par mail :</h3> 
     <p id="text1">xavier.cuvelier@hotmail.fr</p>
     <p>Copier mail <i class="fa-sharp fa-solid fa-copy" onclick="copy('text1')"></i></p>
@@ -77,7 +99,7 @@
     <a href="mailto:xavier.cuvelier@hotmail.fr">Envoyer un mail</a>
     
     <p class="m-3">
-      <a class="form-a" href="#lessonForm">En remplissant le formulaire ci-dessous 
+      <a class="form-a" href="#lessonForm">Ou remplir le formulaire ci-dessous 
         <br>
         <i class="fa-solid fa-arrow-down"></i>
       </a>
@@ -86,7 +108,13 @@
   <br>
   <p id="alert">Texte copié</p>
 
-  <div class="tel text-center mb-5 mt-5">
+  <div class="tel text-center mb-5 mt-5 
+    aos-item"
+    data-aos="zoom-in" 
+    data-aos-offset="0"
+    data-aos-delay="50"
+    data-aos-duration="2000"
+    data-aos-easing="ease-in-out">
     <h3 class="mb-5"><i class="fa fa-mobile" aria-hidden="true"></i> Par telephone :</h3> 
     <p class="mt-3" id="text2">0606557146</p>
     <p>Copier numéro <i class="fa-sharp fa-solid fa-copy" onclick="copy('text2')"></i></p>
@@ -97,7 +125,7 @@
   
   <h3 class="text-center">Réseaux sociaux :</h3>
  
-  <div class="icons mt-5">
+  <div class="icons">
 
     <div class="icon insta">
       <a href="https://www.instagram.com/fcpriay2022/?hl=fr" target="_blank"><img src="./pic/insta.png"  class="insta-icon" alt="" srcset=""></a>
@@ -110,7 +138,13 @@
   
   <h2 class="text-center m-5">Nous Contacter</h2>
 
- <div class="container d-flex flex-collumn justify-content-center align-items-center mt-5">
+ <div class="container d-flex flex-collumn justify-content-center align-items-center mt-5
+  aos-item"
+  data-aos="zoom-in" 
+  data-aos-offset="0"
+  data-aos-delay="50"
+  data-aos-duration="2000"
+  data-aos-easing="ease-in-out">
 
   <form class="row g-3 needs-validation" id="lessonForm" 
   action="https://formspree.io/f/xdojzbly" 
@@ -156,6 +190,7 @@
               <option>Renseignement license</option>
               <option>Match amical</option>
               <option>Heure ou lieu de rencontre</option>
+              <option>Renseignement arbitrage</option>
               <option>Autre..</option>
           </select>
           <div class="invalid-feedback">
@@ -216,6 +251,8 @@
         <li>xavier.cuvelier@hotmail.fr</li>
         <li><b>Adresse</b></li>
         <li>D5, 01160 Priay</li>
+        <li><b>Président :</b></li>
+        <li><b>Johnny Ryser</b></li>
         <br>
         <li><img class="logo" src="./pic/logo-fcp.png"/></li>
       </ul>
@@ -255,6 +292,7 @@
    <li class="numb"><span>5</span></li>
   </ul>
 </div>
+<p class="text-center">© Cauche Anthony</p> 
 
 </footer>
 
