@@ -414,8 +414,9 @@ footer {
   flex-direction: column;
   margin-bottom: 4rem;
 }
-.event-btn > a {
+.event-btn > a,.mail >a, .tel > a {
   margin-bottom: 1rem;
+  width: 11rem;
 }
 .event img {
   width: 320px;
@@ -579,11 +580,9 @@ footer {
 .mail button {
   margin-bottom: 1rem;
 }
-.mail > a, .tel > a, .event-btn a,.main-content a {
-  width: 200px;
-  height: 60px;
+.mail > a, .tel > a,.event-btn a,.main-content a {
+  padding: 0.8rem;
   font-size: 1.3rem;
-  font-family: arial, sans-serif;
   font-weight: 700;
   position: relative;
   color: white;
@@ -755,19 +754,19 @@ footer {
     transform: translateX(0);
   }
   .show-nav .slideInDown-1 {
-    animation: effect 2s ease-in-out;
+    animation: effect 1.2s ease-in-out;
   }
   .show-nav .slideInDown-2 {
-    animation: effect 3s ease-in-out;
+    animation: effect 1.8s ease-in-out;
   }
   @keyframes effect {
     0% {
-      transform: translateX(4rem);
+      transform: translateX(5rem);
     }
-    25% {
-      transform: translateX(-3rem);
+    33% {
+      transform: translateX(-5rem);
     }
-    50% {
+    66% {
       transform: translateX(2rem);
     }
     100% {
