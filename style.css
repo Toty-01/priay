@@ -121,14 +121,11 @@ li {
   border-bottom: 2px solid #FCC624;
   border-radius: 2rem;
 }
-.main-content.stade,.main-content.end {
-  padding-bottom: 4rem;
-}
 .main-content h3 {
   margin-top: 4rem;
   color: #d31e03;
   font-size: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2.2rem;
 }
 .main-content img {
   width: 100%;
@@ -139,9 +136,17 @@ li {
   margin: 0 auto;
   margin-bottom: 2rem;
 }
+.main-content.end {
+  padding-bottom: 4rem;
+}
+.main-content.end p {
+  padding: 2rem;
+  padding-top: 1rem;
+}
 .main-content p,.main-content ul {
   font-size: 1.8rem;
   padding: 2rem;
+  padding-bottom: 3rem;
 }
 .main-content ul {
   margin-left: 0.5rem;
@@ -239,9 +244,6 @@ footer {
   font-size: 1.6rem;
   animation: arrow-mvmnt 3s ease-in-out infinite;
 }
-.Horaires-foot > ul > li > a > img {
-  width: 3rem;
-}
 @keyframes arrow-mvmnt {
   0% {
     transform: translateY(5px);
@@ -261,6 +263,13 @@ footer {
 }
 .top-arrow a {
   color: #D31E03;
+}
+.Horaires-foot > ul > li > a > img {
+  width: 3.2rem;
+}
+.Services-foot > ul > li > a > img:hover, .Horaires-foot > ul > li > a > img:hover, .Contact-foot > ul > li > a > img:hover {
+  transition: all 1.2s;
+  transform: scale(1.15);
 }
 .pag {
   display: flex;
@@ -782,30 +791,22 @@ footer {
   }
   .main-content h3{
     font-size: 2.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
   .main-content > ul > li {
      margin-top: 1rem;
   }
+  .main-content.end p, .main-content.end li {
+    padding: 1rem;
+  }
   .main-content p,.main-content ul {
     font-size: 1.4rem;
-    padding: 2rem;
+    padding: 1rem;
+    padding-bottom: 2.5rem;
   }
   .main-content img {
     width: 260px;
     height: auto;
-  }
-  .main-content::before {
-    top: 2rem;
-    left: -5rem;
-    width: 20rem;
-    height: 5%;
-  }
-  .main-content::after {
-    width: 30rem;
-    height: 4rem;
-    top: 10rem;
-    left: -10rem;
   }
   .vid {
     margin-top: -4rem;
