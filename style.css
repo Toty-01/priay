@@ -488,6 +488,20 @@ footer {
   padding: 2rem;
   margin-top: 1rem;
 }
+.sponsor::after {
+  content: '';
+  position: absolute;
+  background-color: #1e5dfa;
+  top: 22rem;
+  left: 25%;
+  width: 50%;
+  height: 2rem;
+  transform: perspective(10rem) rotateX(70deg);
+  filter: blur(2em);
+}
+.sponsor.space::after {
+  top: 24.5rem;
+}
 .sponsor > a > img {
   width: 250px;
   border-radius: 50%;
@@ -510,6 +524,11 @@ footer {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 2rem;
+}
+.tp {
+  border-top: 2px solid #D31E03;
+  margin-top: 2rem;
+  padding-top: 4rem;
 }
 .tp p {
   font-size: 1.2rem;
