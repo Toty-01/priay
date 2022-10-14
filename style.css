@@ -98,7 +98,7 @@ li {
   background-position: 50% 80%;
 }
 .titre h1 {
-  margin-top: 10rem;
+  margin-top: 8rem;
   font-size: 5.5rem;
 }
 .title-logo img {
@@ -334,7 +334,7 @@ footer {
   background-position: 50% 80%;
 }
 .gal-title h1 {
-  padding-top: 8rem;
+  padding-top: 4rem;
   font-size: 5rem;
   font-weight: lighter;
 }
@@ -343,14 +343,33 @@ footer {
   background: linear-gradient(271deg,#b51903 0%, #d31e03 90%);
   background: -webkit-linear-gradient(271deg,#b51903 0%, #d31e03 90%);
   background: -moz-linear-gradient(271deg,#b51903 0%, #d31e03 90%);
+}
+.pics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.carousel.slide {
-  max-width: 750px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 4rem;
-  margin-top: 4rem;
+.pic {
+  padding: 1rem;
+}
+.pic img {
+  width: 400px;
+  border-radius: 0.5rem;
+  border: 1px solid #FCC624;
+}
+.modal-content {
+  background: #1e5dfa;
+  background: linear-gradient(271deg,#1e5dfa 0%, #042e9f 80%);
+  background: -webkit-linear-gradient(271deg,#1e5dfa 0%, #042e9f 80%);
+  background: -moz-linear-gradient(271deg,#1e5dfa 0%, #042e9f 80%);
+  border-radius: 1rem;
+}
+.modal-body > img {
+  width: 100%;
 }
 .graf {
   display: flex;
@@ -359,34 +378,6 @@ footer {
 .graf > img{
   width: 100%;
   max-width: 900px;
-}
-.carousel-indicators button {
-  height: 0.4rem !important;
-}
-.pics-solo {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  justify-content: space-around;
-  align-items: center;
-}
-.pic-solo > img {
-  width: 100%;
-  max-width: 800px;
-}
-.pic-solo.enfants, .pic-solo.u9, .pic-solo.fcbp, .pic-solo.stade {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-.pic-solo.fcbp img, .pic-solo.stade img {
-  max-width: 600px;
-}
-.pic-solo.enfants > img {
-  width: 100%;
-}
-.pic-solo.u9 > img {
-  width: 350px;
-  height: auto;
 }
 /*----------------page evenements---------------------*/
 .event-title {
@@ -399,7 +390,7 @@ footer {
   padding: 4rem;
 }
 .event-title h1 {
-   padding-top: 0;
+  margin-top: 4rem;
    text-shadow: 3px 3px black;
    font-size: 5rem;
 }
@@ -423,6 +414,14 @@ footer {
   flex-direction: column;
   margin-bottom: 4rem;
 }
+.fcbk-events {
+  border-bottom: 2px solid #FCC624;
+  border-top:  2px solid #FCC624;
+}
+.fcbk-events .event-btn > a::before {
+  background: #444444;
+}
+
 .event-btn > a,.mail >a, .tel > a {
   margin-bottom: 1rem;
   width: 11rem;
@@ -543,7 +542,7 @@ footer {
   box-shadow: 1px 3px #FCC624;
 }
 .contact-title h1 {
-  padding-top: 4rem;
+  padding-top: 2rem;
   font-size: 5rem;
   font-weight: lighter;
 }
@@ -827,6 +826,9 @@ footer {
     width: 260px;
     height: auto;
   }
+  .marquee {
+    font-size: 2rem;
+  }
   .vid {
     margin-top: -4rem;
     margin-bottom: -6rem;
@@ -855,16 +857,8 @@ footer {
     font-size: 5rem;
     font-weight: lighter;
   }
-  .marquee {
-    font-size: 2rem;
-  }
-  .pic-solo.u9{
-    padding-top: 0;
-  }
-  .pic-solo.u9 > img {
-    width: 280px;
-    height: auto;
-    border-radius: 1rem;
+  .pic > img:last-child{
+    width: 300px;
   }
   /*----------event------------*/
   .event-title {
