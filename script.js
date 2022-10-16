@@ -55,3 +55,34 @@ function copy(copyId){
 }
 
 AOS.init();
+
+gsap.from("#ballgsap", {
+  scrollTrigger : {
+    scrub : true
+  },
+  rotation:360*4,
+})  
+gsap.timeline({
+  scrollTrigger:{
+    trigger: "#ballgsap",
+    pin: true,
+    scrub:0.2,
+    start: 'top top',
+    end:'+=150',
+  }
+ })  
+ gsap.from("#ballgsapLeft", {
+  scrollTrigger : {
+    scrub : true
+  },
+  rotation: -360*4,
+})  
+gsap.timeline({
+  scrollTrigger:{
+    trigger: "#ballgsapLeft",
+    pin: true,
+    scrub:0.2,
+    start: 'top top',
+    end:'+=150',
+  }
+ })  

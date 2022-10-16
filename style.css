@@ -151,6 +151,9 @@ li {
 .main-content ul {
   margin-left: 0.5rem;
 }
+.gsap, .gsap-left {
+  display: none;
+}
 .marquee-container {
   display: flex;
   align-items: center;
@@ -803,6 +806,18 @@ footer {
   .main-content {
     width: 100%;
     border-radius: 0;
+  }
+  .balls {
+    display: flex;
+    justify-content: space-around;
+  }
+  .gsap, .gsap-left {
+    display: flex;
+    overflow: hidden;
+    margin-top: 2rem;
+  }
+  .ball {
+    width: 90px;
   }
   .title-logo > img {
     width: 12rem;
