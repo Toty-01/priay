@@ -60,7 +60,7 @@ gsap.from("#ballgsap", {
   scrollTrigger : {
     scrub : true
   },
-  rotation:360*4,
+  rotation:360*5,
 })  
 gsap.timeline({
   scrollTrigger:{
@@ -75,7 +75,7 @@ gsap.timeline({
   scrollTrigger : {
     scrub : true
   },
-  rotation: -360*4,
+  rotation: -360*5,
 })  
 gsap.timeline({
   scrollTrigger:{

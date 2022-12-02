@@ -117,8 +117,6 @@ li {
   background-color: #444444;
   flex-direction: column;
   color: aliceblue;
-  border-top: 2px solid #d31e03;
-  border-bottom: 2px solid #FCC624;
   border-radius: 2rem;
 }
 .main-content h3 {
@@ -337,7 +335,6 @@ footer {
   background-position: 50% 80%;
 }
 .gal-title h1 {
-  padding-top: 4rem;
   font-size: 5rem;
   font-weight: lighter;
 }
@@ -362,17 +359,18 @@ footer {
 .pic img {
   width: 400px;
   border-radius: 0.5rem;
-  border: 1px solid #FCC624;
 }
 .pic img:hover {
   cursor: pointer;
 }
 .modal-content {
-  background: #1e5dfa;
+  background: #1e5cfadb;
   background: linear-gradient(271deg,#1e5dfa 0%, #042e9f 80%);
   background: -webkit-linear-gradient(271deg,#1e5dfa 0%, #042e9f 80%);
   background: -moz-linear-gradient(271deg,#1e5dfa 0%, #042e9f 80%);
-  border-radius: 1rem;
+  border-radius: 0.5rem;
+  width: 750px;
+  margin-left: -5rem;
 }
 .modal-body > img {
   width: 100%;
@@ -485,6 +483,8 @@ footer {
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .sponsor {
   width: 300px;
@@ -510,12 +510,11 @@ footer {
 .sponsor > a > img {
   width: 250px;
   border-radius: 50%;
-  border: 2px solid #FCC624;
+  border: 1px solid #FCC624;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
 }
-
 .sponsor > a > img:hover {
   transition: all .5s ease-out;
   transform: scale(1.05);
@@ -608,7 +607,6 @@ footer {
 .mail h3,.tel h3 {
   font-size: 2rem;
   font-weight: 600;
-  color: #d31e03;
 }
 .mail button {
   margin-bottom: 1rem;
@@ -620,7 +618,7 @@ footer {
   position: relative;
   color: white;
   z-index: 0;
-  border: 2px solid #FCC624;
+  border: 1px solid #FCC624;
   background: #1e5dfa;
   background: linear-gradient(271deg,#1e5dfa 0%, #042e9f 80%);
   background: -webkit-linear-gradient(271deg,#1e5dfa 0%, #042e9f 80%);
@@ -878,6 +876,13 @@ footer {
   .pic > img:last-child{
     width: 300px;
   }
+  .modal-content {
+    width: 340px;
+    margin: 0 auto;
+  }
+  .modal-body > img {
+    width: 308px;
+  }
   /*----------event------------*/
   .event-title {
     height: 105vh;
@@ -918,6 +923,27 @@ footer {
   .sponsor-titre h2 {
     font-size: 2.5rem;
     margin-top: 2rem;
+  }
+  .sponsor > a {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sponsor > a > img {
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sponsor > a > img.smalls {
+    height: 200px;
+    object-fit: contain;
+  }
+  .sponsor::after {
+    top: 20rem;
+  }
+  .sponsor.space::after {
+    top: 22.5rem;
   }
   /*-------------contact-----------------*/
   .titre {
