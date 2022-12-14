@@ -86,3 +86,5 @@ gsap.timeline({
     end:'+=150',
   }
  })  
+
+ document.getElementById('vid').play();
