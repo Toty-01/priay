@@ -102,7 +102,7 @@ li {
   font-size: 5.5rem;
 }
 .title-logo img {
-  width: 250px;
+  width: 200px;
   margin-top: 2rem;
 }
 .titre h2 {
@@ -268,7 +268,9 @@ footer {
 .Horaires-foot > ul > li > a > img {
   width: 3.2rem;
 }
-.Services-foot > ul > li > a > img:hover, .Horaires-foot > ul > li > a > img:hover, .Contact-foot > ul > li > a > img:hover {
+.Services-foot > ul > li > a > img:hover, 
+.Horaires-foot > ul > li > a > img:hover, 
+.Contact-foot > ul > li > a > img:hover {
   transition: all 1.2s;
   transform: scale(1.15);
 }
@@ -420,7 +422,7 @@ footer {
 }
 .fcbk-events {
   border-bottom: 2px solid #FCC624;
-  border-top:  2px solid #FCC624;
+  border-top: 2px solid #FCC624;
 }
 .fcbk-events .event-btn > a::before {
   background: #444444;
@@ -452,7 +454,7 @@ footer {
 }
 .events-logo img {
   margin-top: 1rem;
-  width: 250px;
+  width: 200px;
   margin-bottom: 4rem;
 }
 .agenda {
@@ -576,12 +578,11 @@ footer {
   margin-bottom: 5rem;
   box-shadow: 1px 3px #FCC624;
 }
+.icon.fcbk img, .icon.insta img {
+  width: 6rem;
+}
 .icon.insta {
   margin-right: 2rem;
-}
-.icon > img {
-  width: 50px;
-  height: 50px;
 }
 .insta-icon {
   margin-top: -0.1rem;
@@ -613,12 +614,14 @@ footer {
 }
 .mail > a, .tel > a,.event-btn a,.main-content a {
   padding: 0.8rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
   font-size: 1.3rem;
   font-weight: 700;
   position: relative;
   color: white;
   z-index: 0;
-  border: 1px solid #FCC624;
+  border: 2px solid #FCC624;
   background: #1e5dfa;
   background: linear-gradient(271deg,#1e5dfa 0%, #042e9f 80%);
   background: -webkit-linear-gradient(271deg,#1e5dfa 0%, #042e9f 80%);
@@ -659,6 +662,13 @@ footer {
 }
 
 /*------------------SMALL DEVICE---------------------*/
+
+@media screen and (min-width: 890px) {
+  .main-content.boutique img {
+    width: 220px;
+    height: auto;
+  }
+}
 @media screen and (max-width: 890px) {
   .navbar_links {
     flex-direction: column;
@@ -840,6 +850,14 @@ footer {
   }
   .main-content img {
     width: 260px;
+    height: auto;
+  }
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    background-color: #202020;
+    border-radius: 50%;
+  }
+  .main-content.boutique img {
+    width: 120px;
     height: auto;
   }
   .marquee {
